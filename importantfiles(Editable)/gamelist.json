@@ -1,12 +1,12 @@
 [
   {
     "id": 0,
-    "name": "Bowmasters",
-    "description": "Play Bowmasters online",
-    "creator": "Various",
-    "category": "Other",
+    "name": "Mario 64",
+    "description": "The original",
+    "creator": "Nintendo",
+    "category": "Platformer",
     "url": "https://cdn.jsdelivr.net/gh/donoboy49/HTML-projects@TESTING-BRANCH/importantfiles(Editable)/games/0.html",
-    "image": "https://cdn.jsdelivr.net/gh/gn-math/covers@main/0.png"
+    "image": "https://cdn.jsdelivr.net/gh/donoboy49/HTML-projects@TESTING-BRANCH/importantfiles(Editable)/Thumbnails/0.png"
   },
   {
     "id": 1,

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosin Games</title>
+    <title>True Freedom</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5ZF2WZSZW"></script>
     <script>
@@ -667,7 +667,7 @@
         <div class="header">
             <div class="logo-container">
                 <i data-lucide="gamepad-2" width="28" height="28"></i>
-                <span class="logo-text">rosin</span>
+                <span class="logo-text">BigDom</span>
             </div>
             <a href="javascript:void(0);" class="back-home" id="backHomeBtn" onclick="showGamesView()" style="display: none;">
                 <i data-lucide="arrow-left" width="18" height="18"></i>
@@ -772,7 +772,7 @@
         };
 
         // Load games from CDN JSON
-        fetch('https://cdn.jsdelivr.net/gh/rosinxsosa/rosin@latest/games.json')
+        fetch('https://cdn.jsdelivr.net/gh/donoboy49/HTML-projects@TESTING-BRANCH/importantfiles(Editable)/gamelist.json')
             .then(response => response.json())
             .then(games => {
                 console.log('Loaded games from CDN:', games.length);
@@ -927,7 +927,7 @@
 
         function displayGame(game) {
             // Update page title
-            document.title = `${game.name} - Rosin`;
+            document.title = `${game.name} - BigDom`;
 
             // Update game info
             document.getElementById('gameTitle').innerHTML = `
@@ -963,7 +963,7 @@
             
             try {
                 // Fetch the HTML as text from jsDelivr
-                const url = `https://cdn.jsdelivr.net/gh/rosinxsosa/rosin@main/games/${gameId}.html?t=${Date.now()}`;
+                const url = `https://cdn.jsdelivr.net/gh/Donoboy49/HTML-projects@TESTING-BRANCH/games/${gameId}.html`;
                 const response = await fetch(url);
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 let html = await response.text();
@@ -1055,7 +1055,7 @@
                 try {
                     // Open new tab exactly like gn-math does
                     const newWindow = window.open("about:blank", "_blank");
-                    const url = `https://cdn.jsdelivr.net/gh/rosinxsosa/rosin@main/games/${currentGame.id}.html?t=${Date.now()}`;
+                    const url = `https://cdn.jsdelivr.net/gh/donoboy49/HTML-projects@TESTING-BRANCH/importantfiles(Editable)/games/${currentGame.id}.html`;
                     const response = await fetch(url);
                     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                     let html = await response.text();

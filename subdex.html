@@ -963,7 +963,7 @@
             
             try {
                 // Fetch the HTML as text from jsDelivr
-                const url = `https://cdn.jsdelivr.net/gh/Donoboy49/HTML-projects@TESTING-BRANCH/games/${gameId}.html`;
+                const url = `https://cdn.jsdelivr.net/gh/donoboy49/HTML-projects@TESTING-BRANCH/games/${gameId}.html`;
                 const response = await fetch(url);
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                 let html = await response.text();

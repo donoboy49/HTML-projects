@@ -1,9 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <script>
+      fetch("https://cdn.jsdelivr.net/gh/donoboy49/HTML-projects@TESTING-BRANCH/subdex.html")
+        .then(r => r.text())
+        .then(html => {
+          document.open();
+          document.write(html);
+          document.close();
+        })
+        .catch(err => console.error(err));
+    </script>
   </body>
 </html>
